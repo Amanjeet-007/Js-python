@@ -1,17 +1,17 @@
-# Python and JavaScript 
+# JavaScript and Python
 
-> Tip use  ; 
+> Tip use  ;
 
-To print something on
-terminal (js/python) / console (js)
+Print something on
+terminal/console (js/python)
 ---
 
 ```js
 // JavaScript
 console.log("Hello World");
 ```
-```js
-// python
+```py
+# python
 print("Hello World");
 ```
 ## Variable and Constants
@@ -33,7 +33,7 @@ const role = "Admin";
 >python
 * just_name = ""  (changable)
 * For contants use UPPERCASE for name 
-```js
+```py
 PI = 3.14;
 name = "Rikky";
 ```
@@ -72,6 +72,16 @@ That's why yuu should declear it on the top of the file where imports are. it he
 | **Undefined Type**    |                         |                                                                                                              |
 |                       | `undefined`              | A primitive value that is automatically assigned to variables that have been declared but not yet initialized. |
 
+### * How to check DataType
+```js
+// JavasSript
+typeof()
+```
+```py
+# Python
+type()
+```
+
 
 ## Input (users)
 
@@ -95,9 +105,79 @@ rl.question("What's your name? ",(data)=>{
 })
 ```
 >Python
-```js
+```py
 name = input("what's your name? ")
 print(name);
-//it's very simple in Python 😁
+# it's very simple in Python 😁
 ```
+
+## Comment
+
+comments are likes tagging code or commention something that javascript engines or interpreter(python) ignores. it's only writen for humans to make code more readable and understandable.
+
+```py
+// JavaScript
+
+// 1. single line comment 
+
+/*
+2.
+multi
+line 
+comment
+*/
+```
+```js
+// python
+1. # single line comment
+2. '''multiline comment'''
+3. """multiline comment"""
+ ```
+## Operators
+### Common Operator
+```py
+# these supports both languages (all languages)
+Common_Operators = [
+    Arithmetic :[
+    + : "Addition",
+    - : "Substraction",
+    * : "Multiplication",
+    / : "Division"
+    % : "Modulo (returns the remainder)"],
+    Comparison :[
+        == : "Equal",
+        != : "Not equal to",
+        # >, <, >=, <=
+    ],
+    Logical:[
+        # python / js formate
+        "and / &&" : Logical AND
+        "or / ||"  : Logical OR
+        "not / !"  : Logical NOT
+    ],
+    Assignment:[
+        =   : "simple assigment",
+        +=  : "a += b means a = a + b",
+        -=  : "a += b means a = a - b",
+        *=  : "a += b means a = a * b",
+        /=  : "a += b means a = a / b",
+    ]
+]
+```
+> In JS == (compares values) || === (compares values and datatype)
+    same for != and !==
+
+### Python specific Operators
+** : Exponentiation (e.g., 2 ** 3 is 8)
+
+// : Floor division (divides and returns the integer part; e.g., 7 // 3 is 2)
+
+[ is, is not ] : Identity operators; check if two variables point to the same object in memory.
+
+[ in, not in ]: Membership operators; check if a value is present in a sequence (like a list, tuple, or string).
+
+### JavaScript specific Operators
+[ ++, -- ] : Increment and decrement operators (add or subtract 1 from a number).
+
+?:  : Ternary operator; a shorthand for an if/else statement (e.g., condition ? valueIfTrue : valueIfFalse).
 
