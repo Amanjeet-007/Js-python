@@ -15,7 +15,7 @@ console.log("Hello World");
 print("Hello World");
 ```
 ## Variable and Constants
-Variables :- which store/hold some value (like a container which can store something) 
+Variables :- which ( store | | hold ) some value (like a container which can store something) 
 
 we can divide the variables in two types 
 * Changable variable
@@ -192,7 +192,7 @@ comment
 |             | `===` *(JS only)* | Equal (value + type) |
 |             | `!==` *(JS only)* | Not equal (value + type) |
 | **Logical** | `and` / `&&` | Logical AND |
-|             | `or` / `||`  | Logical OR |
+|             | `or` /  ||   | Logical OR |
 |             | `not` / `!`  | Logical NOT |
 | **Assignment** | `=` | Assign value |
 |               | `+=` | `a += b` → `a = a + b` |
@@ -201,7 +201,7 @@ comment
 |               | `/=` | `a /= b` → `a = a / b` |
 
 ---
-
+>| | means OR in JavaScript 
 ### Python-Specific Operators
 | Operator | Description |
 |----------|-------------|
@@ -217,7 +217,7 @@ comment
 | `++`, `--` | Increment or decrement by 1 |
 | `? :` | Ternary operator (e.g., `condition ? valueIfTrue : valueIfFalse`) |
 
-# Controle Flow
+## Controle Flow
 
 > Controle is mainly divided into two Parts these are
 * Conditionals
@@ -227,6 +227,8 @@ comment
     if
     if else
     if else if else
+    -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    switch (js) || match (py)
 
 But how we write in the JS and Python
 ```js
@@ -297,5 +299,72 @@ else:
     # Runs if all previous conditions are false
     print("Grade: C")
 ```
+
+#### Switch Case
+```js
+// JavaScript
+let day = "Tue";                    // A variable
+switch (day) {
+  case "Mon":                // Compare in cases
+    console.log("It's Monday.");  // Result by cases
+    break;          // break if find one case true
+  case "Tue":
+    console.log("It's Tuesday.");
+    break;
+  case "Wed":
+    console.log("It's Wednesday.");
+    break;
+  default:
+    console.log("It's another day.");
+}
+```
+> break
+
+The break keyword is crucial. Without it, the code will "fall through" and execute the code for the next case as well.
+> default
+
+The default keyword is optional but recommended; it specifies the code to run if none of the case clauses match.
+
+> continue
+
+```py
+# Python
+day = "Tue"
+match day:
+  case "Mon":
+    print("It's Monday.")
+  case "Tue":
+    print("It's Tuesday.")
+  case "Wed":
+    print("It's Wednesday.")
+  case _:
+    print("It's another day.")
+ ```
+ >No need of Break
+
+ The match statement does not need a break statement; it automatically stops after the first successful match.
+ >_
+
+ The _ (underscore) is used as a wildcard pattern. It acts like the default clause in a JavaScript switch statement, matching anything if no other pattern has matched.
+ > Important
+
+ Python's match is more flexible than JavaScript's switch; it can match on more than just simple values, including tuples, lists, and objects.
+
+### 2. Loops
+      JavaScript
+      - for loop
+      - for-of loop
+      - for-in loop
+      - while
+      - do-while
+
+      Python
+      - for loop
+      - while loop
+
+
+   
+  
+
 
 
