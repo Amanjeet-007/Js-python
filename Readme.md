@@ -2,7 +2,17 @@
 
 > Tip use  ;
 
-Print something on
+### List of Content
+- [Print Hello Wolrd](#print-something-on)
+- [Variables and Constant](#variable-and-constants)
+- [Data Types](#data-types)
+- [Comment](#comment)
+- [Operators](#operators)
+- [Controle Flow](#controle-flow)
+    - Controllers
+    - Loops
+
+## Print something on
 terminal/console (js/python)
 ---
 
@@ -361,6 +371,62 @@ match day:
       Python
       - for loop
       - while loop
+
+```js
+// JavaScript
+
+   // for loops
+for(let i = 0 ;i <5; i++){
+  console.log(i) //this loop will print 1 to 5
+}
+//-  -  -  -  -  -  -  -   -  -  -  -  -  -  -  --  
+    // for of loop
+const arr = [1, 2, 3];
+for (const item of arr) {
+  console.log(item); //will print all iteam from arr
+}
+//-  -  -  -  -  -  -  -   -  -  -  -  -  -  -  --  
+    // for in loop
+const obj = {a: 1, b: 2};
+for (const key in obj) {
+  console.log(key); //will return the indexes
+}
+//-  -  -  -  -  -  -  -   -  -  -  -  -  -  -  --  
+    // while
+let i = 0;
+while (i < 5) {
+  console.log(i) // 0 tp 4 (run 5 times)
+  i++;
+}
+//-  -  -  -  -  -  -  -   -  -  -  -  -  -  -  --  
+    // do while
+    //--> this loop will run minimun one change then check the conditon
+let i = 0;
+do {
+  console.log(i)
+  i++;
+} while (i < 5);
+
+ ```
+ ```py
+ # Python
+    # for Loop
+for i in range(5):
+  print(i) # 0 to 4 (5 times)
+# in arr 
+arr = [4,2,1];
+for i in arr:
+  print(i) # print all the iteams from arr
+#-  -  -  -  -  -  -  -   -  -  -  -  -  -  -  -
+    # while Loop  
+i = 0
+while i < 5:
+  print(i) # 0 to 4 (5 times)
+  i += 1 # here you can't use i++ (as you know it's not support in python)
+
+
+  ```
+
 
 
    
