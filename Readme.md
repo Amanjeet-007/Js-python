@@ -1,16 +1,16 @@
 # JavaScript and Python
+LIST OF CONTENT you can see ➡️⬆️ (left top corner)  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    fill="currentColor"
+    style="vertical-align:text-bottom"
+    viewBox="0 0 16 16">
+    <path d="M5.75 2.5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5ZM2 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm1-6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM2 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
+</svg> 
+icon click and see
 
 > Tip use  ;
-
-### List of Content
-- [Print Hello Wolrd](#print-something-on)
-- [Variables and Constant](#variable-and-constants)
-- [Data Types](#data-types)
-- [Comment](#comment)
-- [Operators](#operators)
-- [Controle Flow](#controle-flow)
-    - Controllers
-    - Loops
 
 ## Print something on
 terminal/console (js/python)
