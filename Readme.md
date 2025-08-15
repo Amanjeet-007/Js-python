@@ -12,9 +12,7 @@ icon click and see
 
 > Tip use  ;
 
-## Print something on
-terminal/console (js/python)
----
+## Print something on terminal/console (js/python)
 
 ```js
 // JavaScript
@@ -423,10 +421,38 @@ i = 0
 while i < 5:
   print(i) # 0 to 4 (5 times)
   i += 1 # here you can't use i++ (as you know it's not support in python)
-
-
   ```
+## Function
+function is a block || set of code which perform some task and this is reusual things.
 
+that why it is so important to understant it helps to structure our code and make less repetative.
+
+> In Js we have different way to make function (reusual block)
+```js 
+// 1. Using function keyword
+function name(parameter){
+  //code
+  return;
+}
+
+// 2. Arrow function
+const name_2 = (parameter)=>{
+  //code 
+  return;
+}
+
+//calling the function
+name()
+name_2()
+```
+> In Python we have to way to make a funtion 
+```py
+# using def keyword
+def name(parameter):
+  //code
+# lamda funtion
+
+ ```
 
 
    
