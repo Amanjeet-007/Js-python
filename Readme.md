@@ -423,36 +423,149 @@ while i < 5:
   i += 1 # here you can't use i++ (as you know it's not support in python)
   ```
 ## Function
-function is a block || set of code which perform some task and this is reusual things.
+function is a block || set of code which perform some task and this is reusable things.
 
-that why it is so important to understant it helps to structure our code and make less repetative.
+### Declaration
+> In Javascript we can make function in mainly three ways
+* function declaration
+* function expression
+* Arrow function
+```js  
+// javaScript
 
-> In Js we have different way to make function (reusual block)
-```js 
-// 1. Using function keyword
-function name(parameter){
-  //code
-  return;
+// function Declaration
+  // making function with basic syntax
+function greet(){
+  console.log("Hello User.");
 }
-
-// 2. Arrow function
-const name_2 = (parameter)=>{
-  //code 
-  return;
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- - -- - - 
+//function expression 
+  // assiging a function to a variable 
+const greet_2 = function(){
+  console.log("Hello Bro");
+} 
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- - -- - - 
+//Arrow function 
+const sayHello = ()=>{
+  console.log("Hello World");
 }
-
-//calling the function
-name()
-name_2()
-```
-> In Python we have to way to make a funtion 
-```py
-# using def keyword
-def name(parameter):
-  //code
-# lamda funtion
-
  ```
+
+ > In Python we can make function in two way
+ * Normal function Declaration
+ * lambda function
+ ```py
+ # Python
+
+ # Function Declaration
+ def greet():
+  print("Hello User")
+
+# lambda function
+add = lambda a,b : a+b
+print(add(3,2)) #5
+  ```
+### Parameter and Argument
+>Parameter
+
+It's a variable which is get listed in function while Declaration. 
+initialy it's not have any value when we call the function then we have to pass it.
+
+>Argument
+
+Argument: a value which we pass to a function to work.
+
+#### we also can set default value to Parameter > it will work when we don't get any value while calling.
+Eample
+```js 
+// JavaScript
+//declere any function
+function greet(name){ // here name is parameter
+ console.log(`hello ${name}`) // hello name(which we get while calling the function)
+}
+
+//call the function
+greet("Amanjeet") // pass a name in it
+//output will be > hello Amanjeet
+```
+> Default parameter
+```js
+// Javascript
+function greet(name = "Guest") {
+  console.log(`Hello, ${name}!`);
+}
+ ```
+```py
+def f(*args, **kwargs):
+    print(args, kwargs)
+f(1, 2, a=3)
+ ```
+we can set specific name for parameter
+but in this example ***args** (which can accept multiple argument as parameter and return a tuple of argument value) and ***kwargs** which accept multiple argument as key:value pair
+```py
+ def my_function(
+    100,             # first_arg
+    1, 2, 3,         # *args
+    name="Bob",      # **kwargs
+    city="New York"  # **kwargs
+):
+
+```
+### Return value
+Every function returns some value by default and manually
+
+```js
+function sum(a,b){
+  return (a+b) // return the value
+}
+//we can use it like following method
+const answer = sum(3,4)
+console.log(answer) // 7
+// return statement return the value and we can assign the value into any varible we want and use it (if needed 😁)
+```
+In js if we don't return any value manually it will return
+UNDEFINED itself.
+```py
+def multiply(a,b):
+  return a*b
+answer = multiply(4,6) # 24
+print(answer) # 24
+ ```
+ In python if we don't return any value manually then it return NONE itself
+
+>JavaScript specific things
+* Function declarations are hoisted in Js : it means we can use the function before it's Declaration 
+* But Function expressions and arrow functions not support hoisting it will throw error > TypeError/ReferenceError
+> Hoisting is a Very Intrusting thing if you want to know more about it i Will Add the section for it.
+
+>Python specific things
+* Docstring : it's like comment but much more than comment
+we can define it as the first statement
+and we can see while runtime. 
+
+(it's like we can make a document of the function information like what it does there Parameter etc.)
+```py
+def add_numbers(a, b):
+    """
+    This function takes two numbers as arguments and returns their sum.
+
+    Args:
+        a (int): The first number.
+        b (int): The second number.
+
+    Returns:
+        int: The sum of the two numbers.
+    """
+    return a + b
+
+# You can access the docstring like this:
+print(add_numbers.__doc__)
+```
+
+
+
+
+
 
 
    
