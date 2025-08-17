@@ -561,7 +561,32 @@ def add_numbers(a, b):
 # You can access the docstring like this:
 print(add_numbers.__doc__)
 ```
+## Scope
+so scope it a way to know which variable is accessable from where.
+        
+          we  have basically Two types of scope 
+          1. Global scope
+          2. Block scope
+          Global scope :- these variable are accessable from anywhere because they are defined globally 
 
+          Block scope :- these vaiable are only accessable in the block where they are defined
+          let's see example:-
+```js
+
+let a = 10  // global scope variable
+function block(){
+  let b = 20; // block scope variable
+  // we can access a and b here 
+  // a cause it is a global variable
+  // b cause it's created in the same block 
+  // b can't be access from other block until it's send to that as argument
+}
+//here we can access a
+console.log(a) // 10
+console.log(b) // undefined
+// we can't access b here 
+// **** block means = {} 
+```
 
 
 
