@@ -704,7 +704,32 @@ Py: join() is called on the separator string.
 ' '.join(['Hello', 'World']) # 'Hello World'
 ```
 
-to be continue...
+### Differences and Powerful Features
+
+**JS Strengths**
+> * Template Literals (`) : Easy interpolation & multi-line strings.
+```js 
+// JavaScript
+const name = 'Alice';
+console.log(`Hello, ${name}!`);
+```
+> * Method Chaining : Multiple methods can be chained together.
+```js
+let str = "Amanjeet"
+str.trim().toUpperCase().slice(0, 5);
+```
+**Python Strengths**
+> * F-Strings : Readable string interpolation. String Formatting
+```py
+age = 25
+print(f"I am {age} years old")      # f-string
+print("I am {} years old".format(age))  # format()
+print("I am %d years old" % age)    # old style
+```
+> * Richer Methods : e.g., partition(), isnumeric(), isalpha(), zfill().
+> * Powerful Slicing : [start:end:step] works on strings, lists, tuples.
+> * Hashable Strings : Strings can be dictionary keys or set elements.
+
 
 
 
