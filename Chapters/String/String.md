@@ -1,5 +1,5 @@
 # String 
-## > Examples are in /main.py and script.js
+## > Examples are in /index.py and script.js
 - *Immutability*:  
   In both languages, strings are **immutable** data types, meaning once a string is created, its content cannot be changed.
   

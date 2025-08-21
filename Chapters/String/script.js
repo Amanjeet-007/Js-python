@@ -23,7 +23,7 @@ console.log(name[0]) // A
 console.log(name[2]) // a
 console.log(name[1]) // m
 
-// String methods 
+
 
 
 
